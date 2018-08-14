@@ -46,6 +46,9 @@
 			border-radius: 40px;
 			border: 2px solid #c9c9c9;
 		}
+		.divYellowLine {
+			width: 130px; border-top:3px solid #f5e61a; margin-left: 10px; margin-top: -32px
+		}
 		.h2 {
 			margin-left: 23px;
 			color: white;
@@ -95,6 +98,20 @@
 			text-decoration: underline;
 			color: #00bfff;
 		}
+		.pBold {
+			font-weight: bold;
+		}
+		.divFont {
+			color: #084b8a;
+			margin-left: 10px;
+			font-size: 15px;
+		}
+		.divBlueLine {
+			width: 400px; border:1px solid #0080ff; margin-left: 15px; margin-top: 20px; margin-bottom: -5px;
+		}
+		.pMarginBottom {
+			margin-bottom: -7px;
+		}
 	</style>
 </head>
 <body>
@@ -108,7 +125,7 @@
 					<h2 class="h2">Everyone</h2>
 					<h2 class="h2" id="h2Athlete">Athlete</h2>
 				</div>
-				<div style="width: 130px; border-top:3px solid #f5e61a; margin-left: 10px; margin-top: -32px"></div>
+				<div class="divYellowLine"></div>
 				<div>
 					<h4 id="h4MainRules">Main rules:</h4>
 				</div>
@@ -134,7 +151,30 @@
 					</ul>
 				</div>
 			</div>
-			<div id="rightDiv"></div>
+			<div id="rightDiv">
+				<div>
+					<div class="divFont">
+						<p class="pBold pMarginBottom">Date of birth:</p>
+						<p class="pMarginBottom">12 September 1992</p>
+						<p class="pBold pMarginBottom">Country of birth</p>
+						<p class="pMarginBottom">Ukraine</p>
+					</div>
+					<div class="divBlueLine divMarginBottom" "></div>
+					<div class="divFont">
+						<p class="pBold pMarginBottom">Soft skills:</p>
+						<p class="pMarginBottom">- Photoshop</p>
+						<p class="pMarginBottom">- Word</p>
+						<p class="pMarginBottom">- Paint</p>
+					</div>
+					<div class="divBlueLine" "></div>
+					<div class="divFont">
+						<p class="pBold pMarginBottom">About me:</p>
+						<p class="pMarginBottom">- Lover</p>
+						<p class="pMarginBottom">- Lover</p>
+					</div>
+					<div class="divBlueLine" "></div>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
