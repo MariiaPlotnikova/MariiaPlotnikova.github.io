@@ -43,8 +43,8 @@
 		
 		#img {
 			margin-left: 20px; margin-top: 20px;
-			border-radius: 45px;
-			border: 3px solid white;
+			border-radius: 40px;
+			border: 2px solid #c9c9c9;
 		}
 		.h2 {
 			margin-left: 23px;
@@ -55,11 +55,36 @@
 		#h2Athlete {
 			position:relative; top:-15px;
 		}
-		#hr {
-			 margin-top:20px;
-  			 border-top:2px solid green;
-  			 height:100%;
+		
+		#h4MainRules {
+			position:relative; top:2px;
+			color: white;
+			font-family: Avenir;
+			text-align: center;
+			text-decoration: underline;
 		}
+		.allRules {
+			color: white;
+			font-size: 9px;
+			text-align: center;
+			margin-top: -5px;
+			margin-left: 4px;
+			border-radius: 5px;
+			height: 13px;
+		}
+		.orangeRule {
+			background-color: #ffa500; 
+			width: 100px; 
+		}
+		.blueRule {
+			background-color: #0174df;
+			width: 70px;  
+		}
+		.GreenRule {
+			background-color: #008000; 
+			width: 130px;  
+		}
+		
 	</style>
 </head>
 <body>
@@ -74,6 +99,20 @@
 					<h2 class="h2" id="h2Athlete">Athlete</h2>
 				</div>
 				<div style="width: 130px; border-top:3px solid #f5e61a; margin-left: 10px; margin-top: -32px"></div>
+				<div>
+					<h4 id="h4MainRules">Main rules:</h4>
+				</div>
+				<div>
+					<div class="orangeRule allRules">
+						<p>Eat more protein</p>
+					</div>
+					<div class="blueRule allRules">
+						<p>Drink water</p>
+					</div>
+					<div class="GreenRule allRules">
+						<p>Get enough sleep</p>
+					</div>
+				</div>
 			</div>
 			<div id="rightDiv"></div>
 		</div>
