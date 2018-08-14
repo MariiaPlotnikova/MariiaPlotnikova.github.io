@@ -6,8 +6,8 @@
 	<style type="text/css">
 		#containerAllDivs {
 			background-color: lightgrey;
-			width: 860px;
-			height: 802px;
+			width: 601px;
+			height: 549px;
 			margin: auto;
 			padding: 1px;
 		}
@@ -15,55 +15,65 @@
 			display: flex; 
 		}
 		#topDiv {
-			width: 850px;
-			height: 90px;
+			width: 595px;
+			height: 60px;
 			background-color: #3d4f5b; text-align: center;
-			margin-left: 5px;
-			margin-top: -29px;
+			margin-left: 3px;
+			margin-top: -22px;
 		}
 		#leftDiv 
 		{
-			width: 220px;
-			height: 700px;
+			width: 150px;
+			height: 483px;
 			background: linear-gradient(to right, #444444 , #6a6a6a);
-			margin-left: 5px;
+			margin-left: 3px;
 		}
 		#rightDiv{
-			width: 630px;
-			height: 700px;
+			width: 445px;
+			height: 483px;
 			background-color: white;
 		}
-		.pTopDiv {
-			position:relative; top:27px;
+		#pTopDiv {
+			position:relative; top:15px;
 			color: white;
 			font-family: Avenir;
 			font-weight: lighter;
-			font-size: 35px;
+			font-size: 25px;
 		}
 		
 		#img {
-			margin-left: 33px; margin-top: 35px;
-			border-radius: 58px;
+			margin-left: 20px; margin-top: 20px;
+			border-radius: 45px;
 			border: 3px solid white;
 		}
-		.p1 {
-			position:relative; top:25px;
+		.h2 {
+			margin-left: 23px;
 			color: white;
-			font-family: Times New Roman;
+			font-family: Arial;
+			font-weight: lighter;
+		}
+		#h2Athlete {
+			position:relative; top:-15px;
+		}
+		#hr {
+			 margin-top:20px;
+  			 border-top:2px solid green;
+  			 height:100%;
 		}
 	</style>
 </head>
 <body>
 	<div id="containerAllDivs">
-		<div id="topDiv"><p class="pTopDiv">Workout plan!</p></div>
+		<div id="topDiv"><p id="pTopDiv">Workout plan</p></div>
 		<div id="leftRightDivs">
 			<div id="leftDiv">
-				<div><img id="img" src="Gym.jpg" alt="" width="150px"; height="150px";>
+				<div><img id="img" src="Gym.jpg" alt="" width="104px"; height="104px";>
 				</div>
 				<div>
-					<h1 class="p1">Everyone</h1>
-					<h1 class="p1">Athlete</h1>
+					<h2 class="h2">Everyone</h2>
+					<h2 class="h2" id="h2Athlete">Athlete</h2>
 				</div>
+				<div style="width: 130px; border-top:3px solid #f5e61a; margin-left: 10px; margin-top: -32px"></div>
 			</div>
 			<div id="rightDiv"></div>
 		</div>
