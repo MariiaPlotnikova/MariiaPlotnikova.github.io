@@ -7,7 +7,9 @@
 		#containerAllDivs {
 			background-color: lightgrey;
 			width: 860px;
-			height: 795px;
+			height: 802px;
+			margin: auto;
+			padding: 1px;
 		}
 		#leftRightDivs {
 			display: flex; 
@@ -17,13 +19,13 @@
 			height: 90px;
 			background-color: #3d4f5b; text-align: center;
 			margin-left: 5px;
-			
+			margin-top: -15px;
 		}
 		#leftDiv 
 		{
 			width: 220px;
 			height: 700px;
-			background: linear-gradient(to right, #444444 70%, #6d6d6d 100%);
+			background: linear-gradient(to right, #444444 , #6a6a6a);
 			margin-left: 5px;
 		}
 		#rightDiv{
@@ -31,13 +33,20 @@
 			height: 700px;
 			background-color: white;
 		}
+		.h1TopDiv {
+			position:relative; top:25px;
+			color: white;
+			font-family: Times New Roman;
+		}
 	</style>
 </head>
 <body>
 	<div id="containerAllDivs">
-		<div id="topDiv"><h2>Work out day!</h2></div>
+		<div id="topDiv"><h1 class="h1TopDiv">Work out day!</h1></div>
 		<div id="leftRightDivs">
-			<div id="leftDiv"></div>
+			<div id="leftDiv">
+				<img src="Gym.jpg">
+			</div>
 			<div id="rightDiv"></div>
 		</div>
 	</div>
