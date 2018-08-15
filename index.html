@@ -64,12 +64,13 @@
 			font-family: Avenir;
 			text-align: center;
 			text-decoration: underline;
+			margin-top: 17px;
 		}
 		.allRules {
 			color: white;
 			font-size: 9px;
 			text-align: center;
-			margin-top: -5px;
+			margin-top: 5px;
 			margin-left: 4px;
 			border-radius: 5px;
 			height: 13px;
@@ -86,8 +87,9 @@
 			background-color: #008000; 
 			width: 130px;  
 		}
-		.pAllRules{
-			padding-top:1px;
+		.span{
+			padding-top: 1px;
+			display: inline-block;
 		}
 		#h4Food {
 			position:relative; top:2px;
@@ -96,7 +98,9 @@
 			text-align: center;
 			text-decoration: underline;
 		}
-		
+		.classLi{
+			padding-top: 5px;
+		}
 		.pBold {
 			font-weight: bold;
 		}
@@ -109,7 +113,7 @@
 			width: 400px; border:1px solid #0080ff; margin-left: 15px; margin-top: 20px; margin-bottom: -5px;
 		}
 		.pMarginBottom {
-			margin-bottom: -7px;
+			margin-bottom: -6.5px;
 		}
 	</style>
 </head>
@@ -130,13 +134,13 @@
 				</div>
 				<div>
 					<div class="orangeRule allRules">
-						<p class="pAllRules">Eat more protein</p>
+						<span class="span">Eat more protein</span>
 					</div>
 					<div class="blueRule allRules">
-						<p class="pAllRules">Drink water</p>
+						<span class="span">Drink water</span>
 					</div>
 					<div class="GreenRule allRules">
-						<p class="pAllRules">Get enough sleep</p>
+						<span class="span">Get enough sleep</span>
 					</div>
 				</div>
 				<div>
@@ -145,8 +149,8 @@
 				<div>
 					<ul style="color:white">
 						<li><a href="https://www.britannica.com/science/amino-acid" style="color: #00bfff">Amino</a></li>
-						<li><a href="https://www.precisionnutrition.com/all-about-creatine" style="color: #00bfff">Creatine</a></li>
-						<li><a href="https://www.precisionnutrition.com/all-about-bcaas" style="color: #00bfff">BCAA</a></li>
+						<li class="classLi"><a href="https://www.precisionnutrition.com/all-about-creatine" style="color: #00bfff">Creatine</a></li>
+						<li class="classLi"><a href="https://www.precisionnutrition.com/all-about-bcaas" style="color: #00bfff">BCAA</a></li>
 					</ul>
 				</div>
 			</div>
