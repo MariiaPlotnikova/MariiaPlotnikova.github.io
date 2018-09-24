@@ -1,0 +1,827 @@
+{
+	"info": {
+		"_postman_id": "cd953e71-0fc3-44ec-9074-369ee8811fe0",
+		"name": "Weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "By city name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Kyiv&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiv"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By city Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?id=703448&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "703448"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By geographik coordinate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?lon=30,52&lat=50,43&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lon",
+							"value": "30,52"
+						},
+						{
+							"key": "lat",
+							"value": "50,43"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By zip code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?zip=03134,ua&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "zip",
+							"value": "03134,ua"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cities within a rectangle zone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/box/city?bbox=24,37,23,47,20&lang=ru&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"box",
+						"city"
+					],
+					"query": [
+						{
+							"key": "bbox",
+							"value": "24,37,23,47,20"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(10) Cities in cycle ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/find?lat=55&lon=31&cnt=10&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55"
+						},
+						{
+							"key": "lon",
+							"value": "31"
+						},
+						{
+							"key": "cnt",
+							"value": "10"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(50) Cities in cycle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/find?lat=55&lon=31&cnt=50&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55"
+						},
+						{
+							"key": "lon",
+							"value": "31"
+						},
+						{
+							"key": "cnt",
+							"value": "50"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(1) City in cycle",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "faa5cd8a-8441-4823-b1a9-33b1f4363cae",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/find?lat=55&lon=31&cnt=1&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55"
+						},
+						{
+							"key": "lon",
+							"value": "31"
+						},
+						{
+							"key": "cnt",
+							"value": "1"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(3) Several cities IDs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/group?id=524901,703448,264374&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"group"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "524901,703448,264374"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(20) Several cities IDs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/group?id=703448,1784642,3167096,4864492,2988507,323786,3220782,2950159,524901,4678858,3178905,696643,6542283,4366164,7872548,703448,264374,710409,3249089,3067696&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"group"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "703448,1784642,3167096,4864492,2988507,323786,3220782,2950159,524901,4678858,3178905,696643,6542283,4366164,7872548,703448,264374,710409,3249089,3067696"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bulk downloading",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://bulk.openweathermap.org/sample/?APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"protocol": "http",
+					"host": [
+						"bulk",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"sample",
+						""
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By city name (mode = xml)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Kyiv&mode=xml&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiv"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By city name (mode=html)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Kyiv&mode=html&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiv"
+						},
+						{
+							"key": "mode",
+							"value": "html"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Temperature in Celsium",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Kyiv&units=metric&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiv"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Temperature in Kelvin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Kyiv&units=imperial&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiv"
+						},
+						{
+							"key": "units",
+							"value": "imperial"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Language UA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?id=703448&lang=ua&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "703448"
+						},
+						{
+							"key": "lang",
+							"value": "ua"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid values - numbers (by city name)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=65ky&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "65ky"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid values - special characters (by city name)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=@#$%&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "@"
+						}
+					],
+					"hash": "$%&APPID=39b3e73672dc0ea03fc4b45d06d36c04"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid values - letters (by city ID)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?id=kyiv&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "kyiv"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid values - special characters (by city id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?id=@#$%&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "@"
+						}
+					],
+					"hash": "$%&APPID=39b3e73672dc0ea03fc4b45d06d36c04"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid values - o city in cycle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/find?lat=55&lon=31&cnt=0&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55"
+						},
+						{
+							"key": "lon",
+							"value": "31"
+						},
+						{
+							"key": "cnt",
+							"value": "0"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid values - 51 cities in cycle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/find?lat=55&lon=31&cnt=51&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55"
+						},
+						{
+							"key": "lon",
+							"value": "31"
+						},
+						{
+							"key": "cnt",
+							"value": "51"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid values - 21 cities ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/group?id=703448,1784642,3167096,4864492,2988507,323786,3220782,2950159,524901,4678858,3178905,696643,6542283,4366164,706900,7872548,703448,264374,710409,3249089,3067696&APPID=39b3e73672dc0ea03fc4b45d06d36c04",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"group"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "703448,1784642,3167096,4864492,2988507,323786,3220782,2950159,524901,4678858,3178905,696643,6542283,4366164,706900,7872548,703448,264374,710409,3249089,3067696"
+						},
+						{
+							"key": "APPID",
+							"value": "39b3e73672dc0ea03fc4b45d06d36c04"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
